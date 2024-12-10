@@ -12,7 +12,7 @@ import numpy as np
 
 # import data from input.txt
 
-data = pd.read_csv('input.txt', header=None)
+data = pd.read_csv('../inputs/dayOneInput.txt', header=None)
 
 data.head()
 
@@ -21,10 +21,6 @@ data[0][0].split()
 middle = round(len(data[0][0]) / 2)
 
 sumTotal = int(data[0][0][middle:]) - int(data[0][0][:middle])
-
-print(sumTotal)
-
-
 
 grandTotal = 0
 list1 = []
@@ -37,10 +33,8 @@ print(grandTotal)
 list1Sorted = list1.sort()
 list2Sorted = list2.sort()
 
-
-
 for i in range(len(list1)):
     sumTotal = list1[i] - list2[i]
     grandTotal += abs(sumTotal)
 
-print(grandTotal)
+print("Answer for day 1 part 1 with your input file is " + str(grandTotal))
