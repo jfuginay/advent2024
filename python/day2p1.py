@@ -29,7 +29,7 @@ def count_safe_reports(data):
 url = "https://adventofcode.com/2024/day/2/input"
 
 # Your session cookie
-session_cookie = "session_token"
+session_cookie = "53616c7465645f5f92ad32a207f568b4e1a47eae1df9d9372fd7472e7e193069554dd925f96f21c1f801ad27cf1ae8006436eea874479919152212904690e1b5"
 
 # Fetch and process the data
 data = fetch_data(url, session_cookie)
