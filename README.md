@@ -6,6 +6,7 @@ Welcome to my Advent of Code 2024 repository! This project contains my solutions
 
 - [Introduction](#introduction)
 - [Languages Used](#languages-used)
+- [Setup](#setup)
 - [Project Structure](#project-structure)
 - [How to Run](#how-to-run)
 - [Contributing](#contributing)
@@ -20,6 +21,25 @@ Advent of Code is an annual event that provides daily programming challenges fro
 - Python
 - TypeScript
 - Go
+
+## Setup
+
+### TypeScript Setup
+1. Initialize a new npm project in the typescript directory:
+```sh
+cd typescript
+npm init -y
+```
+
+2. Install required dependencies:
+```sh
+npm install typescript ts-node @types/node
+```
+
+3. Create a tsconfig.json (if not already present):
+```sh
+npx tsc --init
+```
 
 ## Project Structure
 
@@ -57,10 +77,22 @@ python day1.py
 
 ### TypeScript
 
-Navigate to the `typescript` directory, compile the TypeScript file, and run the resulting JavaScript file:
+Navigate to the `typescript` directory and ensure you have the necessary dependencies:
 
 ```sh
 cd typescript
+npm install typescript ts-node @types/node
+```
+
+Then you can run the TypeScript files directly using ts-node:
+
+```sh
+npx ts-node day1.ts
+```
+
+Alternatively, you can still use the traditional compile-and-run method:
+
+```sh
 tsc day1.ts
 node day1.js
 ```
@@ -81,3 +113,4 @@ Feel free to fork this repository and submit pull requests. Contributions are we
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
